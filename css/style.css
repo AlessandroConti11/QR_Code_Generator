@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;600&display=swap');
+
+
+body {
+    background-color: #282C34;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #3A3F47;
+    border-radius: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 750px;
+}
+
+#qr-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+button {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #5C6BC0;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3C4A99;
+}
+
+#generated-image {
+    max-width: 100%;
+    height: auto;
+    display: none;
+    margin-top: 20px;
+}
+
+#preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.customize {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.customize.expanded {
+    max-height: 500px;
+}
+
+.customize-selector {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #E0E0E0;
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #495057;
+    color: white;
+    border: 1px solid #5C6BC0;
+    border-radius: 5px;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+select:focus {
+    background-color: #818e94;
+    border-color: #3C4A99;
+}
+
+select option {
+    background-color: #495057;
+    color: white;
+    padding: 8px;
+}
+
+select option:hover {
+    background-color: #6C757D;
+}
+
+select option:checked {
+    background-color: #5C6BC0;
+    color: white;
+}
+
+
+input{
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #495057;
+    color: white;
+    border: 1px solid #5C6BC0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="number"] {
+    width: 179px;
+    /*padding: 10px;*/
+}
+input[type="color"] {
+    padding: 5px;
+}
+
+input:focus {
+    background-color: #818e94;
+    border-color: #3C4A99;
+}
